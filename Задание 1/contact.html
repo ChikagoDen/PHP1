@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+</head>
+<body>
+    <h1>Контакты</h1>
+    <ul class="menu">
+        <li><a href="index.php">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+    </ul>
+    <hr>
+    <!-- Создаём форму и указываем её обработчик и метод <form action="http://mihailmaximov.ru/projects/mail/post.php" method="post" name="form"> -->
+<form  name="form">
+    <p color="red"><b><font color="blue">Обратная связь</font></b></p>
+    <input size="30" name="name" type="text" placeholder="Ваше имя"/><!-- Поле ввода имени -->
+    <br>
+    <input size="30" name="email" type="text" placeholder="Ваша почта"/><!-- Поле ввода почты  -->
+    <br>
+    <input size="30" name="header" type="text" placeholder="Тема"/><!-- Поле ввода для темы сообщения -->
+    <br>
+    <textarea cols="29" name="message" rows="5"> Текст сообщения</textarea><!-- Текстовое поле для самого сообщения -->
+    <br>
+    <input type="submit" value="Отправить" /><!-- Кнопка с надписью «Отправить», которая запускает обработчик формы -->
+  </form>
+    <hr>
+    
+    <p><b>Как проехать?</b></p>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A90659f889995533bfb767063cc0b1c83eabc7f14572736d2ee6e3802eca2277c&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+
+    <hr>
+    <p class=""> &laquo;Все права защищены &copy;&nbsp;2020&raquo; </p>
+</body>
+</html>
