@@ -1,7 +1,7 @@
 
    <?php 
-        $h1="Главная";
-        $title="Главная страница";
+        $h1=array("Главнаястраница");
+        $title=array("Главная страница");
         $time=date("Y");
    ?>
 
@@ -14,7 +14,12 @@
 </head>
 <body>
 
-    <h1> <?php echo $h1 ?></h1>
+    <h1> 
+        <?php 
+            foreach ($h1 as $str)
+            echo $str."&nbsp"; 
+        ?>
+    </h1>
   
     <ul class="menu">
         <li><a href="catalog.html">Каталог</a></li>
@@ -30,6 +35,7 @@
     </p>
     <hr>
     <p class=""> &laquo;Все права защищены &copy;&nbsp;<?php echo $time;?>&raquo; </p>
+   
 
     <?php
     $a=114;
