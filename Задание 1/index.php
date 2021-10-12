@@ -1,9 +1,8 @@
 
-   <?php 
+ <?php 
         $h1=array("Главная страница");
         $title=array("Главная страница");
         $time=date("Y"); 
-        //  require_once('index1.html');
    ?>
 
 <!DOCTYPE html>
@@ -11,14 +10,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $title ?></title>
+    <title><?php 
+        foreach ($title as $str_title)
+    echo $str_title." ";
+    ?></title>
 </head>
 <body>
 
     <h1> 
         <?php 
-            foreach ($h1 as $str)
-            echo $str." "; 
+            foreach ($h1 as $str_h1)
+            echo $str_h1." "; 
         ?>
     </h1>
   
@@ -37,7 +39,8 @@
     <hr>
     <p class=""> &laquo;Все права защищены &copy;&nbsp;<?php echo $time;?>&raquo; </p>
    
-
+<br><br><br><br>
+<h3>Задание 5</h3>
     <?php
     $a=114;
     $b=2;
@@ -46,15 +49,39 @@
      Например, если a = 114, b = 2, надо, чтобы получилось:
       b = 114, a = 2. 
       Дополнительные переменные использовать нельзя.";?><br>
-    <?php echo "Было";?> <br>
-    <?php echo "a=".$a;?><br>
-    <?php echo "b=".$b;?> <br>
-    <?php echo " a = a + b     $a = $a + $b ;"?> <br>
-    <?php echo " b = b - a     $b = $b - $a ;"?> <br>
-    <?php echo " b = -b        $b = -$b ;"?> <br>
-    <?php echo " a = a - b     $a = $a - $b ;"?> <br>
-    <?php echo "Стало";?> <br>
-    <?php  echo "a=".$a;?> <br>
-    <?php echo "b=".$b; ?><br> 
+    <?php
+        echo " 
+            Было        <br>
+            a= {$a}     <br>
+            b={$b}      <br>";
+        $a = $a + $b ;
+        $b = -($b - $a);
+        echo "
+            a = a + b ={$a} <br>
+            b = -(b - a) ={$b} <br>";
+        $a = $a - $b;
+        echo "
+            a = a - b = {$a} <br>
+            Стало  <br>
+            a=".$a."<br>
+            b=".$b."<br>"
+    ?>
+     <?php echo "
+        <br>
+        БИТЫ 
+        <br>
+        Было        <br>
+        a= {$a}     <br>
+        b={$b}      <br>";
+         $a=($a^$b);
+         $b=($a^$b);  // НЕ ПОНЯЛ КАК ТАК ПОЛУЧИЛОСЬ))
+         $a=($a^$b);
+    ?> 
+    <br>
+    <?php echo
+       "Стало  <br>
+        a=".$a."<br>
+        b=".$b."<br>"
+     ?>
    </body>
 </html>
