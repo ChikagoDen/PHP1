@@ -1,8 +1,9 @@
 
    <?php 
-        $h1=array("Главнаястраница");
+        $h1=array("Главная страница");
         $title=array("Главная страница");
-        $time=date("Y");
+        $time=date("Y"); 
+        //  require_once('index1.html');
    ?>
 
 <!DOCTYPE html>
@@ -17,7 +18,7 @@
     <h1> 
         <?php 
             foreach ($h1 as $str)
-            echo $str."&nbsp"; 
+            echo $str." "; 
         ?>
     </h1>
   

@@ -1,19 +1,24 @@
-<?php 
-$h1=array("Главнаястраница");
-$title=array("Главная страница");
-$time=date("Y");
-?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?php echo $title ?></title>
+<title>
+    <!-- <?php 
+        foreach ($title as $str-title)
+    echo $str-title." ";
+    ?> -->
+</title>
 </head>
 <body>
 
-<h1> <?php echo $h1 ?></h1>
+<h1>
+     <!-- <?php  
+        foreach ($h1 as $str-h1)
+    echo $str-h1." ";  
+    ?> -->
+</h1>
 
 <ul class="menu">
 <li><a href="catalog.html">Каталог</a></li>
@@ -28,4 +33,6 @@ $time=date("Y");
 самыми низкими ценами и&nbsp;самым высоким качеством.
 </p>
 <hr>
-<p class=""> &laquo;Все права защищены &copy;&nbsp;<?php echo $time;?>&raquo; </p>
+<p class=""> &laquo;Все права защищены &copy;&nbsp;
+    <!-- <?php echo $time;?> -->
+    &raquo; </p>
