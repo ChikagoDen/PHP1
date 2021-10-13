@@ -1,6 +1,5 @@
 <?php 
-        $h1=array("Главная страница"); require('index4.html');
-        $title=array("Главная страница");require('index4.html');
-        $time=date("Y"); require('index4.html');
-       
-   ?>
+        $h1=array("Главная страница"); 
+        $title=array("Главная страница");
+        $time=date("Y");
+   include "site.html";
